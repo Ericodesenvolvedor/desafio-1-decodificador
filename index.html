@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador e Decodificador de Mensagens</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <img src="./assets/img/logo-alura.svg" alt="Logo da alura cursos online.">
+    </header>
+
+    <div class="container">
+        <main>
+            <section id="home">
+                <div class="conteudo-texto">
+                    <h1 class="uppercase">Codifique e decodifique suas mensagens</h1>
+                    
+                    <div class="texto-icon">
+                        <p>suas mensagens em segurança</p>
+                        <img src="./assets/img/cadeado-icon.svg" alt="Icone ilustrativo de um cadeado fechado.">
+                    </div>
+                    
+                    <div class="ancoras-btn">
+                        <button>
+                            <a href="#codificar">Codificar</a>
+                        </button>
+                        <button>
+                            <a href="#decodificar">Decodificar</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="conteudo-imagem">
+                    <img src="./assets/img/duas-pessoas-conversando-mensagem.svg" alt="Ilustracao de duas pessoas conversando no celular por um aplicativo de mensagens.">
+                </div>
+            </section>
+
+            <section id="codificar" class="sessao-padronizada">
+                <div class="lado-mensagem">
+                    <h2 class="titulo-campos">Codificar</h2>
+                    <form action="#">
+                        <div>
+                            <label for="codificar-texto">Codificar texto</label>
+                            <textarea id="codificar-texto" name="codificar-texto"  class="texto-textarea" cols="60" rows="10" placeholder="Digite sua mensagem aqui!"></textarea>
+                        </div>
+                        <button class="btn-padrao" id="codificarBtn">Codificar</button>
+                    </form>
+                </div>
+                <div class="lado-mensagem-resultado">
+                    <div>
+                        <h2 class="titulo-campos">Sua mensagem</h2>
+                        <p class="campo-resultado-mensagem">Não há mensagens codificadas!</p>
+                    </div>
+                    <button class="copiar-texto btn-padrao textoCopiado0" id="copiar-texto-codificar">Copiar texto</button>
+                    <div class="texto-copiado">
+                        <p>Texto copiado com sucesso!</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="decodificar" class="sessao-padronizada">
+                <div class="lado-mensagem">
+                    <h2 class="titulo-campos">Decodificar texto</h2>
+                    <form action="#">
+                        <div>
+                            <label for="decodificar-texto">Decodificar texto</label>
+                            <textarea id="decodificar-texto" name="decodificar-texto"  class="texto-textarea" cols="60" rows="10" placeholder="Digite sua mensagem aqui!"></textarea>
+                        </div>
+                        <button class="btn-padrao" id="decodificarBtn">Decodificar</button>
+                    </form>
+                </div>
+                <div class="lado-mensagem-resultado">
+                    <div>
+                        <h2 class="titulo-campos">Sua mensagem</h2>
+                        <p class="campo-resultado-mensagem">Não há mensagens decodificadas!</p>
+                    </div>
+                    <button class="copiar-texto btn-padrao textoCopiado1" id="copiar-texto-decodificar">Copiar texto</button>
+                    <div class="texto-copiado">
+                        <p>Texto copiado com sucesso!</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

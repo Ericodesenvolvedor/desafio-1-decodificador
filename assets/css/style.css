@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Changa&family=Cinzel:wght@400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-primaria: 'Cinzel', serif;
+    --font-secondaria: 'Changa', sans-serif;;
+    --font-acao: 'Bebas Neue', cursive;;
+
+    --background: #EBEBEB;
+    --cor-primaria: #1D1D1D;
+    --variacao-cor-primaria: #041A24;
+    --cor-secondaria: #ffffff;
+    --variacao-cor-secondaria: #8B8B8B;
+
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin-inline: auto;
+}
+
+header {
+    width: 100%;
+    padding: 2rem 1rem;
+}
+
+header img {
+    position: fixed;
+    max-width: 80px;
+    width: 100%;
+    height: auto;
+}
+
+.sessao-padronizada {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    position: relative;
+}
+
+textarea {
+    padding: .5rem;
+    resize: none;
+}
+
+#home {
+    width: 100%;
+    height: calc(100vh - 4rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* LADO DO CONTEÚDO DE TEXTO HOME */
+
+#home .conteudo-texto {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#home .conteudo-texto h1.uppercase {
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-family: var(--font-primaria);
+    color: var(--cor-primaria);
+}
+
+#home .conteudo-texto .texto-icon {
+    width: 100%;
+    margin-bottom: 4rem;
+    
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+#home .conteudo-texto .texto-icon p {
+    font-size: 2rem;
+    font-family: var(--font-secondaria);
+    color: var(--variacao-cor-secondaria);
+}
+
+#home .conteudo-texto .texto-icon img {
+    min-width: 15px;
+    max-width: 15px;
+    width: 100%;
+}
+
+#home .conteudo-texto .ancoras-btn {
+    width: 100%;
+    display: flex;
+    gap: 4rem;
+}
+
+#home .conteudo-texto .ancoras-btn button {
+    cursor: pointer;
+    padding: 1rem 4rem;
+    background-color: var(--variacao-cor-primaria);
+    color: var(--cor-secondaria);
+}
+
+#home .conteudo-texto .ancoras-btn button a {
+    font-family: var(--font-acao);
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    color: var(--cor-secondaria);
+    text-decoration: none;
+}
+
+/* LADO DA IMAGEM HOME */
+
+#home .conteudo-imagem {
+    width: 40%;
+}
+
+#home .conteudo-imagem img {
+    max-width: 600px;
+    min-width: 400px;
+    width: 100%;
+}
+
+/* SESSAO PADRONIZADA */
+
+.lado-mensagem {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-campos {
+    font-family: var(--font-primaria);
+    font-size: 4rem;
+    margin-bottom: 5rem;
+}
+
+.lado-mensagem-resultado {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.lado-mensagem-resultado div {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.btn-padrao {
+    cursor: pointer;
+    width: 100%;
+    padding: 1rem 0;
+    font-family: var(--font-acao);
+    background-color: var(--variacao-cor-primaria);
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    color: var(--cor-secondaria);
+    display: block;
+}
+
+.texto-copiado {
+    display: none;
+    background-color: rgb(159, 245, 159);
+    margin-top: 5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.texto-copiado.texto-copiado-ativo {
+    display: block;
+}
+
+/* OUTRAS CONFIGURAÇÕES SESSÃO */
+
+form div {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+
+    margin-bottom: 2rem;
+}
+
+form div label {
+    font-size: var(--font-secondaria);
+    font-size: 2rem;
+}
