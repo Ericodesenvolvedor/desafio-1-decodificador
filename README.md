@@ -28,7 +28,7 @@ Você poderá trocar mensagens secretas com outras pessoas que saibam o segredo 
 
 ## :link: Site Publicado
 
-[Link para ver o site hospedado](https://ericodesenvolvedor.github.io/Desafio-01-Decodificador/)
+[Link para ver o site hospedado](https://ericodesenvolvedor.github.io/desafio-1-decodificador/)
 
 ## :construction: Próxima release 
 
