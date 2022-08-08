@@ -49,7 +49,7 @@ function codificarTexto(mensagem) {
         }
     })
 
-    return mensagemDecodificada.join("");
+    return mensagemDecodificada.join("").normalize('NFD').replace(/([\u0300-\u036f]|[^0-9a-zA-Z])/g, '');
 }
 
 function decodificarTexto(mensagem) {
@@ -61,7 +61,7 @@ function decodificarTexto(mensagem) {
         mensagem = mensagem.replace('ufat', 'u');
     }
 
-    return mensagem;
+    return mensagem.normalize('NFD').replace(/([\u0300-\u036f]|[^0-9a-zA-Z])/g, '');
 }
 
 let mostrarMensagemP = document.querySelectorAll(".campo-resultado-mensagem");
