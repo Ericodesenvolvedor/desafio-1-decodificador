@@ -151,17 +151,25 @@ textarea {
 }
 
 .lado-mensagem-resultado {
-    width: 50%;
+    max-width: 400px;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     text-align: center;
     border: 1px solid black;
     padding: 1rem;
 }
 
 .lado-mensagem-resultado div {
+    width: 100%;
     margin-bottom: 2rem;
     font-size: 2rem;
+}
+
+.campo-resultado-mensagem {
+    width: 100%;
+    word-wrap: break-word;
 }
 
 .btn-padrao {
